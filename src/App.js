@@ -1,30 +1,28 @@
-import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Home from './pages/home/Home';
-import Navbar from './Components/Navbar/Navbar';
-import Responsive from './pages/profile/responsive';
-//import Card from './pages/home/Shop';
-const App = () => {
-    return (
-<>
+import React from "react";
+import Navbar from "./Comp/Navbar"
+import Hsection from "./Comp/Hsection";
+import Mostpopular from "./Comp/Mostpopular";
+import About from "./Comp/About";
+import Category from "./Comp/Category";
+import Offer from "./Comp/Offer";
+import Testimonials from "./Comp/Testimonials";
+import Footer from "./Comp/Footer";
 
-<Router>
-    <nav>
-      {/* <Link to="/">Home</Link>
-      <Link to="/About">About</Link>
-      <Link to="/Contact">Contact</Link>
-      <Link to="/Shop">Shop</Link> */}
+
+function App() {
+  return (
+    <div className="App">
+
       <Navbar />
-    </nav>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      {/* <Route path="/About" element={<About />} />
-      <Route path="/Contact" element={<Contact />} />
-      <Route path="/Shop" element={<Shop />} /> */}
-    </Routes>
-  </Router>
-  <Responsive />
-
-</>
-    )
+      <Hsection />
+      <Mostpopular />
+      <About />
+      <Category />
+      <Offer />
+      <Testimonials />
+      <Footer />
+    </div>
+  );
 }
+
 export default App;

@@ -1,0 +1,86 @@
+/* File: src/components/Testimonials.css */
+.testimonials {
+    text-align: center;
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #3d3d3d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-wrapper img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .card .date {
+    color: #ffcc00;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .card .review {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .view-more {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .view-more:hover {
+    background-color: #e6b800;
+    color: #fff;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  

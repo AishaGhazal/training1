@@ -1,0 +1,129 @@
+
+.h-section {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.chocolates {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.chocolates img {
+object-fit: cover;
+position: absolute;
+width: 1202px;
+height: 847.6px;
+left: 238px;
+gap: 0px;
+opacity: 0px;
+}
+
+.h-text h1 {
+font-family: Montez;
+font-size: 115.49px;
+font-weight: 400;
+line-height: 151.07px;
+letter-spacing: 0.09em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;  
+height: 122px;
+top: 181px;
+left: 106px;
+gap: 0px;
+opacity: 0px;
+background: linear-gradient(274.01deg, #A06A2A -14.84%, #FEE48F 34.34%, #A06A2A 115.44%);
+}
+
+.h-text p {
+ width: 548px;
+height: 90px;
+top: 484px;
+left: 106px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.shop-now {
+  background-color: gold;
+  color: black;
+  top:608px;
+  left: 100px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+ padding: 626px 0 0 142px;
+gap: 0px;
+opacity: 0px;
+font-family: Open Sans;
+font-size: 29.63px;
+font-weight: 700;
+line-height: 40.35px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+
+.shop-now:hover {
+  background-color: #ffd700;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .h-section {
+    padding-left: 2rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .h-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .h-text p {
+    font-size: 1.2rem;
+  }
+
+  .shop-now {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .h-text h1 {
+    font-size: 2rem;
+  }
+
+  .h-text p {
+    font-size: 1rem;
+  }
+
+  .shop-now {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
